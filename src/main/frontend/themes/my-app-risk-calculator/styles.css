@@ -14,8 +14,19 @@
   line-height: 1.5;
 }
 html {
+
+  --primary-background-color:rgb(116, 142, 99);
+  --secondary-background-color:rgb(153, 176, 128);
+  --tertiary-background-color:rgb(249, 181, 114);
+  --accent-background-color:rgb(250, 248, 237);
+
+
+
+
+
       /* --lumo-contrast-90pct:hsla(214, 96%, 96%, 0.9); */
-      --button-text-color:hsl(22, 96%, 47%);
+      /* --button-text-color:hsl(22, 96%, 47%); */
+      --button-text-color: rgb(116, 142, 99);
       --line-color:hsl(22, 96%, 47%);
       --locale-color:hsl(214, 100%, 98%);
 
@@ -37,8 +48,12 @@ html {
       --lumo-success-color-50pct: rgba(62, 229, 170, 0.5);
       --lumo-success-color-10pct: rgba(62, 229, 170, 0.1);
       --lumo-shade: hsl(0, 0%, 13%);
-      --lumo-primary-color: hsl(22, 96%, 47%);
-      --lumo-primary-text-color: hsl(22, 100%, 42%);
+      /* --lumo-primary-color: hsl(22, 96%, 47%); */
+      --lumo-primary-color: rgb(116, 142, 99);
+
+      /* --lumo-primary-text-color: hsl(22, 100%, 42%); */
+      --lumo-primary-text-color: rgb(116, 142, 99);
+
       --lumo-error-color: hsl(0, 81%, 50%);
       --lumo-error-text-color: hsl(0, 86%, 45%);
       --lumo-success-color: hsl(159, 76%, 57%);
@@ -93,8 +108,10 @@ html {
       --lumo-success-color-50pct: rgba(62, 229, 170, 0.5);
       --lumo-success-color-10pct: rgba(62, 229, 170, 0.1);
       --lumo-shade: hsl(0, 0%, 13%);
-      --lumo-primary-color: hsl(22, 96%, 47%);
-      --lumo-primary-text-color: hsl(22, 100%, 42%);
+      /* --lumo-primary-color: hsl(22, 96%, 47%); */
+      --lumo-primary-color: rgb(116, 142, 99);
+      /* --lumo-primary-text-color: hsl(22, 100%, 42%); */
+      --lumo-primary-text-color: rgb(116, 142, 99);
       --lumo-error-color: hsl(0, 81%, 50%);
       --lumo-error-text-color: hsl(0, 86%, 45%);
       --lumo-success-color: hsl(159, 76%, 57%);

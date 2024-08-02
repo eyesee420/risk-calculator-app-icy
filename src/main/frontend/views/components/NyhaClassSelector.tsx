@@ -10,7 +10,7 @@ const NyhaClassSelector = () => {
   return (
     <div className='w-full  flex justify-between  mb-[10px] '>
     <p  className='text-[12px] lg:text-[14px] text-secondary-text-color'>{'NYHA Class :'}</p>
-    <ListBox className= 'w-[200px] sm:w-[300px] bg-primary-color p-[5px]  rounded-[4px]' 
+    <ListBox className= 'w-[200px] sm:w-[300px] bg-primary-background-color p-[5px]  rounded-[4px]' 
      selectedValues={[0]} >
       <Item className='nyhaclass text-[12px] lg:text-[14px] pr-[10px] ' 
       selected>

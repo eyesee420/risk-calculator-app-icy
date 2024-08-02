@@ -26,7 +26,7 @@ interface InputProps {
             onChange={inputvalue}
             >
         <Tooltip slot="tooltip" text={inputProps.tooltip} />
-          <div slot="suffix" className="bg-primary-color rounded-r-[3px] relative right-0 h-full w-1/4 flex items-center justify-end pr-2">
+          <div slot="suffix" className="bg-secondary-background-color rounded-r-[3px] relative right-0 h-full w-1/4 flex items-center justify-end pr-2">
           <span slot="suffix" className='text-header-text-color font-medium' style={{color:'var(--lumo-header-text-color)'}}>{inputProps.suffix}</span>
           </div>
         </TextField>

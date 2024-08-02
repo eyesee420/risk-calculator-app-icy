@@ -30,7 +30,7 @@ export  const InputChangeContainer = () => {
       helperText="Note: while this score uses creatinine as a proxy for renal function, eGFR is generally considered a more accurate indicator"
       clearButtonVisible>
         <Tooltip slot="tooltip" text="tooltip" />
-        <div slot="suffix" className="bg-primary-color rounded-r-[3px] relative  right-0 h-full w-1/4 flex items-center justify-end pr-2">
+        <div slot="suffix" className="bg-secondary-background-color rounded-r-[3px] relative  right-0 h-full w-1/4 flex items-center justify-end pr-2">
         <span onClick={handleClick} className="cursor-pointer" style={{color:'var(--lumo-header-text-color)'}} slot="suffix">{desc}</span>
         {/* <Icon slot="prefix" style={{padding:'0.35rem'}} icon="vaadin:function" /> */}
         </div>

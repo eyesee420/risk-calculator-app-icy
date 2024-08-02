@@ -26,6 +26,15 @@ export default {
         "header-text-color": "var(--lumo-contrast)",
         "banner-color": "var(--lumo-contrast-90pct)",
 
+        "primary-background-color": "var(--primary-background-color)",
+        "secondary-background-color": "var(--secondary-background-color)",
+        "tertiary-background-color": "var(--tertiary-background-color)",
+        "accent-background-color": "var(--accent-background-color)",
+        "text-color": "hsla(214, 78%, 88%, 0.5)",
+
+
+
+
 
       }
     },
