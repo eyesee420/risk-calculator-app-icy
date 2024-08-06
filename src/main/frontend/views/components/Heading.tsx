@@ -1,6 +1,7 @@
 import React from 'react'
 import LocaleSelecttion from './LocaleSelecttion';
 import { Icon } from '@vaadin/react-components';
+import ToggleTheme from './ToggleTheme';
 
 export const Banner = () => (
   <div className='w-full sm:flex sm:flex-col sm:items-start   mx-[5px] ' style={{backgroundColor:''}}>
@@ -21,8 +22,8 @@ const Heading = () => {
           <LocaleSelecttion/>
         </div>
         <div>
-        <Icon style={{ height: '21px', width: '21px' }} slot={'suffix'} icon="vaadin:adjust" />
-
+        {/* <Icon className='text-white' style={{ height: '21px', width: '21px' }} slot={'suffix'} icon="vaadin:adjust" /> */}
+        <ToggleTheme/>
         </div>
         </div>
       </div>
