@@ -1,6 +1,7 @@
 import React from 'react'
 import LocaleSelecttion from './LocaleSelecttion';
 import { Icon } from '@vaadin/react-components';
+import Toogle from './Toogle';
 
 export const Banner = () => (
   <div className='w-full sm:flex sm:flex-col sm:items-start   mx-[5px] ' style={{backgroundColor:''}}>
@@ -14,14 +15,14 @@ const Heading = () => {
   return (
     <>
       <div  className='w-full h-[40px] flex justify-between items-center bg-primary-color' style={{backgroundColor:'#748E63'}}>
-        <div className='ml-[20px] text-header-text-color' >Grop - [ Risk Calculator for Heart Failure ]</div>
+        <div className='ml-[5px] text-[12px] sm:text-[14px] md:ml-[20px] text-header-text-color ' >Grop - [ Risk Calculator for Heart Failure ]</div>
 
         <div className='flex items-center mr-[20px]'>
         <div className='mr-[20px]'> 
           <LocaleSelecttion/>
         </div>
-        <div>
-        <Icon style={{ height: '21px', width: '21px' }} slot={'suffix'} icon="vaadin:adjust" />
+        <div className=' flex items-center'>
+        <Toogle />
 
         </div>
         </div>

@@ -25,14 +25,14 @@ const LocaleSelecttion = () => {
       ]
     return (
         <Select  
-        className='w-[100px] bg-locale-color rounded-[4px]'
+        className='w-[80px] sm:w-[100px] bg-red-50 rounded-[4px]'
         theme='small'
         value={locale}
         onChange={handleChange} >
-          <ListBox className='  '
+          <ListBox className='bg- -400'
           selected={0}>
               {options.map((items , index) => (
-                <Item key={index} className='mr-[ ]  text-black' value={items.value} >
+                <Item key={index} className='mr-[ ]  text-black bg- -200' value={items.value} >
                 <div className='grid grid-cols-2 items-center'>
                 <span className='text-[12px]'>{items.label}</span>
                 <img slot="prefix" className='w-[25px] h-[25px]' src={items.img }alt={items.label} />

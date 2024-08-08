@@ -5,6 +5,7 @@
   "dependencies": {
     "@fontsource/heebo": "4.5.0",
     "@polymer/polymer": "3.5.1",
+    "@theme-toggles/react": "^4.1.0",
     "@vaadin/bundles": "24.4.2",
     "@vaadin/common-frontend": "0.0.19",
     "@vaadin/hilla-file-router": "24.4.3",
@@ -30,7 +31,8 @@
     "proj4": "2.11.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router-dom": "6.23.1"
+    "react-router-dom": "6.23.1",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@babel/preset-react": "7.24.7",
@@ -124,7 +126,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "4c94f14e21cf9c731a0ef2684c7ce6870ee092621371ae53eeddb1fa152df4fb"
+    "hash": "65fe894dbdbd40d76a606aa1070c35367ce7ca29d55b06c28b742f8057271e29"
   },
   "overrides": {
     "@vaadin/vaadin-development-mode-detector": "$@vaadin/vaadin-development-mode-detector",
@@ -165,6 +167,8 @@
     "@vaadin/hilla-react-signals": "$@vaadin/hilla-react-signals",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
-    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
+    "@theme-toggles/react": "$@theme-toggles/react",
+    "zustand": "$zustand"
   }
 }

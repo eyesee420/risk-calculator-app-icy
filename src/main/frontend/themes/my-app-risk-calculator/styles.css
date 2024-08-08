@@ -231,3 +231,31 @@ html {
   --lumo-success-text-color: hsl(159, 61%, 40%);
   --lumo-font-family: Heebo;
 } */
+
+vaadin-select[opened]{
+
+  /* background-color: aqua; */
+}
+
+vaadin-select[focused]{
+  /* background-color: violet; */
+}
+
+
+/* this bitch */
+vaadin-select-overlay::part(overlay){
+  background-color: white;
+}
+
+vaadin-select-item::part(checkmark){
+  background-color: green;
+}
+[part='toggle-button']::before {
+  background-color: green;
+ 
+}
+
+
+vaadin-select::part(toggle-button){
+  color: var(--primary-background-color);
+}
