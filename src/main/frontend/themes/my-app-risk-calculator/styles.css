@@ -232,14 +232,6 @@ html {
   --lumo-font-family: Heebo;
 } */
 
-vaadin-select[opened]{
-
-  /* background-color: aqua; */
-}
-
-vaadin-select[focused]{
-  /* background-color: violet; */
-}
 
 
 /* this bitch */
