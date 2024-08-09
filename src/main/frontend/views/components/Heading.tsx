@@ -2,6 +2,7 @@ import React from 'react'
 import LocaleSelecttion from './LocaleSelecttion';
 import { Icon } from '@vaadin/react-components';
 import ToggleTheme from './ToggleTheme';
+import Toogle from './Toogle';
 
 export const Banner = () => (
   <div className='w-full sm:flex sm:flex-col sm:items-start   mx-[5px] ' style={{backgroundColor:''}}>
@@ -25,7 +26,7 @@ const Heading = () => {
         <div className=' flex items-center'>
 
 
-        <ToggleTheme/>
+        <Toogle/>
 
         </div>
         </div>
