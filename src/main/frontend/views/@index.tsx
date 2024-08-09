@@ -23,12 +23,8 @@ const [toggle , setToggle] = React.useState('')
     "theme","light"
   );
 
-// const handleToggle
-
   return (
 <div>
-  {/* eyesee
- <Toogle/> */}
 <Heading/>
   <div className='w-full flex justify-center  '>
     <div className='md:w-[90%] lg:w-[70%]  '> 
