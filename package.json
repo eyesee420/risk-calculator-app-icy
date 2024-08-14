@@ -31,6 +31,7 @@
     "proj4": "2.11.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-responsive": "^10.0.0",
     "react-router-dom": "6.23.1",
     "zustand": "^4.5.4"
   },
@@ -126,7 +127,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "65fe894dbdbd40d76a606aa1070c35367ce7ca29d55b06c28b742f8057271e29"
+    "hash": "063578b41860ad416f8cb762688c2eaa1cc5c0c1d7d5507e08cd4bbfe7266f89"
   },
   "overrides": {
     "@vaadin/vaadin-development-mode-detector": "$@vaadin/vaadin-development-mode-detector",
@@ -169,6 +170,7 @@
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
     "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
     "@theme-toggles/react": "$@theme-toggles/react",
-    "zustand": "$zustand"
+    "zustand": "$zustand",
+    "react-responsive": "$react-responsive"
   }
 }

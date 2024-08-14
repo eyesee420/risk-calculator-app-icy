@@ -1,7 +1,7 @@
 import { Select, ListBox, Item } from '@vaadin/react-components';
 import React from 'react'
 
-const LocaleSelecttion = () => {
+const LocaleSelection = () => {
     const [locale, setLocale] = React.useState(localStorage.getItem("locale") ?? "en");
     const handleChange = (event: any) => {
         const selectedOption = event.target.value;
@@ -44,4 +44,4 @@ const LocaleSelecttion = () => {
   )
 }
 
-export default LocaleSelecttion
+export default LocaleSelection
