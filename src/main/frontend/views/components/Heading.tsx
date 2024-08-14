@@ -3,7 +3,9 @@ import LocaleSelection from './LocaleSelection';
 import { Icon } from '@vaadin/react-components';
 import ToggleTheme from './ToggleTheme';
 import Toogle from './Toogle';
+
 import { useMediaQuery } from 'react-responsive';
+
 
 export const Banner = () => (
   <div className='w-full sm:flex sm:flex-col sm:items-start   mx-[5px]  my-[10px]' style={{backgroundColor:''}}>
@@ -38,7 +40,7 @@ const Heading = () => {
 
 
         <Toogle/>
- 
+          
         </div>
         </div>
       </div>
