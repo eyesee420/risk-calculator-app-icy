@@ -1,0 +1,36 @@
+{
+  "headlines": {
+    "wad": "WAD",
+    "app_description": "Web Application Framework"
+  },
+  "buttons": {
+    "cancel": "Cancel",
+    "okay": "Okay",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "dialog": {
+    "header":{
+      "save":"Save ",
+      "delete":"Delete  "
+    },
+    "message":{
+      "save":"Are you sure you want to save ?",
+      "delete":"Are you sure you want to delete ?",
+      "error": "Error",
+      "warning": "Warning"
+    },
+    "notification":{
+      "save":"Successfully Saved!",
+      "delete":"Successfully Removed!",
+      "update":"Successfully Updated!",
+      "cancel":"Actions has been Cancelled. "
+    }
+  },
+  "data_table" : {
+    "no_record_display_text": "There are no records to display",
+    "rows_per_page_text":"Rows per page:"
+  }
+
+
+}

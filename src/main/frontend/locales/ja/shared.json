@@ -1,0 +1,34 @@
+{
+  "headlines": {
+    "wad": "WAD",
+    "app_description": "Webアプリケーションフレームワーク"
+  },
+  "buttons": {
+    "cancel": "キャンセル",
+    "okay": "わかった",
+    "yes": "はい",
+    "no": "いいえ"
+  },
+  "dialog": {
+    "header":{
+      "save":"保存",
+      "delete":"消去"
+    },
+    "message":{
+      "save":"保存してもよろしいですか?",
+      "delete":"消去してもよろしいですか ？",
+      "error": "エラー",
+      "warning": "警告"
+    },
+    "notification":{
+      "save":"正常に保存されました!",
+      "delete":"無事に削除されました！",
+      "update":"正常に更新されました！",
+      "cancel":"アクションはキャンセルされました。"
+    }
+  },
+  "data_table" : {
+    "no_record_display_text": "表示するレコードがありません",
+    "rows_per_page_text":"ページあたりの行数:"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "heading": {
+    "title": "Grop - [ Risk Calculator for Heart Failure ]"
+  },
+  "introduction":{
+    "header":"INSTRUCTIONS ：",
+    "description":" Use in adult patients (≥18 years). Use with caution in patients with reduced ejection fraction (not yet externally validated in this population)."
+  },
+  "page": {
+    "labels": "",
+    "buttons": {},
+    "errors": {}
+  },
+  "forms":{
+    "age": {
+      "label":"Age",
+      "placeholder":"",
+      "tooltip":"Enter years of Age",
+      "suffix":"years"
+    },
+    "ejection_fraction": {
+      "label":"Ejection Fraction",
+      "placeholder":"",
+      "tooltip":"expressed as a percentage",
+      "suffix":"%"
+    },
+    "sbp": {
+      "label":"sBP",
+      "placeholder":"Normal: 100 - 120",
+      "tooltip":"",
+      "suffix":"mm Hg"
+    },
+    "bmi": {
+      "label":"BMI",
+      "placeholder":"Normal: 20 - 25",
+      "tooltip":"BMI",
+      "suffix":"kg/m²"
+    },
+    "creatinine :": {
+      "label":"Creatinine ",
+      "placeholder":{
+        "label_first":"Normal: 0.7 - 13",
+        "label_second":"Normal: 62 - 115"
+      },
+      "tooltip":"",
+      "suffix":{
+        "first_text":"mg/dL",
+        "second_text":"µmol/L"
+      },
+      "text_helper":"Note: while this score uses creatinine as a proxy for renal function, eGFR is generally considered a more accurate indicator"
+    },
+    "nyha_class": {
+      "label":"NYHA Class :",
+      "class":{
+        "one":"Class I",
+        "two":"Class II",
+        "three":"Class III",
+        "four":"Class IV"
+      }
+    }
+    
+  },
+  "criteria_buttons":{
+    "gender":{
+      "title":"Gender",
+      "female":"Female 0",
+      "male":"Male +1"
+    },
+    "smoker":{
+      "title":"Current smoker",
+      "no":"No 0",
+      "yes":"Yes +1"
+    },
+    "diabetes":{
+      "title":"Diabetes",
+      "no":"No 0",
+      "yes":"Yes +3"
+    },
+    "copd":{
+      "title":"COPD",
+      "no":"No 0",
+      "yes":"Yes +2"
+    },
+    "diagnosed":{
+      "title":"Heart failure first diagnosed ≥18 months ago",
+      "no":"No 0",
+      "yes":"Yes +2"
+    },
+    "blocker":{
+      "title":"Beta blocker",
+      "no":"No +3",
+      "yes":"Yes +0"
+    },
+    "acei":{
+      "title":"ACEi/ARB",
+      "no":"No +1",
+      "yes":"Yes +0"
+    }
+  },
+  "results":{
+    "no_result":{
+      "title":"No Result",
+      "message":"Please fill out input fields."
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "heading": {
+    "title": "グループ - [ 心不全のリスク計算機 ]"
+  },
+  "introduction":{
+    "header":"説明書 ：",
+    "description":"成人患者（18歳以上）に使用してください。駆出率が低下した患者には慎重に使用してください（この集団ではまだ外部検証されていません）。"
+  },
+  "page": {
+    "labels": "",
+    "buttons": {},
+    "errors": {}
+  },  
+  "forms":{
+    "age": {
+      "label":"年齢",
+      "placeholder":"",
+      "tooltip":"年齢を入力してください",
+      "suffix":"年々"
+    },
+    "ejection_fraction": {
+      "label":"駆出率",
+      "placeholder":"",
+      "tooltip":"パーセンテージで表す",
+      "suffix":"%"
+    },
+    "sbp": {
+      "label":"sBP",
+      "placeholder":"正常: 100 - 120",
+      "tooltip":"",
+      "suffix":"mm Hg"
+    },
+    "bmi": {
+      "label":"BMI",
+      "placeholder":"通常: 20 - 25",
+      "tooltip":"BMI",
+      "suffix":"kg/m²"
+    },
+    "creatinine :": {
+      "label":"クレアチニン ",
+      "placeholder":{
+        "label_first":"正常: 0.7 - 13",
+        "label_second":"正常: 62 - 115"
+      },
+      "tooltip":"",
+      "suffix":{
+        "first_text":"mg/dL",
+        "second_text":"µmol/L"
+      },
+      "text_helper":"注意: このスコアでは腎機能の代理としてクレアチニンを使用していますが、一般的には eGFR の方がより正確な指標であると考えられています。"
+    },
+    "nyha_class": {
+      "label":"NYHAクラス :",
+      "class":{
+        "one":"クラス  I",
+        "two":"クラス II",
+        "three":"クラス III",
+        "four":"クラス IV"
+      }
+    }
+    
+  },
+  "criteria_buttons":{
+    "gender":{
+      "title":"性別",
+      "female":"女性 0",
+      "male":"男 +1"
+    },
+    "smoker":{
+      "title":"現在喫煙者",
+      "no":"いいえ 0",
+      "yes":"はい +1"
+    },
+    "diabetes":{
+      "title":"糖尿病",
+      "no":"いいえ 0",
+      "yes":"はい +3"
+    },
+    "copd":{
+      "title":"COPD",
+      "no":"いいえ 0",
+      "yes":"はい +2"
+    },
+    "diagnosed":{
+      "title":"心不全が初めて診断されてから18か月以上経過している",
+      "no":"いいえ 0",
+      "yes":"はい +2"
+    },
+    "blocker":{
+      "title":"ベータ遮断薬",
+      "no":"いいえ +3",
+      "yes":"はい +0"
+    },
+    "acei":{
+      "title":"ACEi/ARB",
+      "no":"いいえ +1",
+      "yes":"はい +0"
+    }
+  },
+  "results":{
+    "no_result":{
+      "title":"検索結果はありません",
+      "message":"入力フィールドに入力してください。"
+    }
+  }
+
+}
