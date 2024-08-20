@@ -27,10 +27,14 @@
     "@vaadin/vaadin-usage-statistics": "2.1.2",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.29.3",
+    "i18next": "^23.13.0",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.5.2",
     "lit": "3.1.4",
     "proj4": "2.11.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-i18next": "^15.0.1",
     "react-responsive": "^10.0.0",
     "react-router-dom": "6.23.1",
     "zustand": "^4.5.4"
@@ -127,7 +131,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "063578b41860ad416f8cb762688c2eaa1cc5c0c1d7d5507e08cd4bbfe7266f89"
+    "hash": "5e6566e4f165a7e4d4a2a7ee927b9bd295746bf480502c0f56baa9ef8f2d6452"
   },
   "overrides": {
     "@vaadin/vaadin-development-mode-detector": "$@vaadin/vaadin-development-mode-detector",
@@ -171,6 +175,10 @@
     "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
     "@theme-toggles/react": "$@theme-toggles/react",
     "zustand": "$zustand",
-    "react-responsive": "$react-responsive"
+    "react-responsive": "$react-responsive",
+    "i18next": "$i18next",
+    "i18next-browser-languagedetector": "$i18next-browser-languagedetector",
+    "i18next-http-backend": "$i18next-http-backend",
+    "react-i18next": "$react-i18next"
   }
 }

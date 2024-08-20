@@ -120,10 +120,7 @@ html {
       --lumo-font-family: Heebo;
     }
 
-.tests{
-  position: fixed;
-  z-index: 1000;
-}
+
 
 
 @media only screen and (max-width: 326px) {
@@ -144,6 +141,10 @@ vaadin-text-field::part(input-field){
 
 }
 
+vaadin-text-field.creatinine > [slot="helper"]{
+  font-weight: bold;
+  /* color: black; */
+}
 
 vaadin-item.nyhaclass[selected]{
   background-color: var(--lumo-disabled-text-color);

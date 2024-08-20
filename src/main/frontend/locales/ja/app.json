@@ -3,14 +3,19 @@
     "title": "グループ - [ 心不全のリスク計算機 ]"
   },
   "introduction":{
-    "header":"説明書 ：",
-    "description":"成人患者（18歳以上）に使用してください。駆出率が低下した患者には慎重に使用してください（この集団ではまだ外部検証されていません）。"
+    "banner_text1":"心不全における 1 年および 3 年の死亡率を推定します。",
+    "banner_text2":"注: このスコアはクレアチニンを腎機能の代理として使用していますが、eGFRの方が一般的にはより正確な指標と考えられています。"
   },
   "page": {
     "labels": "",
     "buttons": {},
     "errors": {}
-  },  
+  },
+  "menu-title": {
+    "title-1": "使用する場合",
+    "title-2": "真珠/落とし穴",
+    "title-3": "使用理由"
+  },
   "forms":{
     "age": {
       "label":"年齢",
@@ -36,8 +41,10 @@
       "tooltip":"BMI",
       "suffix":"kg/m²"
     },
-    "creatinine :": {
-      "label":"クレアチニン ",
+    "creatinine": {
+      "label":"クレアチニン :",
+      "note-title": "注: ",
+      "note-desc":"このスコアはクレアチニンを腎機能の代理として使用していますが、eGFRの方が一般的にはより正確な指標と考えられています。", 
       "placeholder":{
         "label_first":"正常: 0.7 - 13",
         "label_second":"正常: 62 - 115"

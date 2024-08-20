@@ -3,13 +3,13 @@ import { create } from 'zustand'
 
 interface BearState {
   theme: string
-  toggleTheme: () => void
+  onToggle: () => void
 }
 
 const useToggleStore = create<BearState>((set) => ({
 
     theme: 'dark',
-    toggleTheme: () =>
+    onToggle: () =>
       set((state) =>
         { 
             document.documentElement.setAttribute('theme', state.theme);

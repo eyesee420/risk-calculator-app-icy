@@ -3,13 +3,18 @@
     "title": "Grop - [ Risk Calculator for Heart Failure ]"
   },
   "introduction":{
-    "header":"INSTRUCTIONS ：",
-    "description":" Use in adult patients (≥18 years). Use with caution in patients with reduced ejection fraction (not yet externally validated in this population)."
+    "banner_text1":"Estimates 1- and 3- year mortality in heart failure.",
+    "banner_text2":"Note: while this score uses creatinine as a proxy for renal function, eGFR is generally considered a more accurate indicator "
   },
   "page": {
     "labels": "",
     "buttons": {},
     "errors": {}
+  },
+  "menu-title": {
+    "title-1": "When to Use",
+    "title-2": "Pearls/Pitfalls",
+    "title-3": "Why Use"
   },
   "forms":{
     "age": {
@@ -36,8 +41,10 @@
       "tooltip":"BMI",
       "suffix":"kg/m²"
     },
-    "creatinine :": {
-      "label":"Creatinine ",
+    "creatinine": {
+      "label":"Creatinine :",
+      "note-title": "Note: ",
+      "note-desc":"while this score uses creatinine as a proxy for renal function, eGFR is generally considered a more accurate indicator", 
       "placeholder":{
         "label_first":"Normal: 0.7 - 13",
         "label_second":"Normal: 62 - 115"
