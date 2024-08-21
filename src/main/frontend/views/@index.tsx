@@ -26,7 +26,7 @@ const [toggle , setToggle] = React.useState('')
       <div className='w-full flex justify-center  '>
         <div className='md:w-[90%] lg:w-[70%]  '> 
           <div className='md:grid-cols-2 md:grid'>
-            <div className='w-full col-span-2 flex '>  
+            <div className='w-full col-span-2 '>  
             <Banner/>
             </div>
             <div className='col-span-2'>

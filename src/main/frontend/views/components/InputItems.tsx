@@ -5,7 +5,7 @@ import React from "react";
 interface InputProps {
     label: string;
     placeholder?: string;
-    tooltip: string;
+    tooltip?: string;
     suffix?: string;
     
   }
@@ -21,7 +21,6 @@ interface InputProps {
             label={inputProps.label} 
             clearButtonVisible
             placeholder={inputProps.placeholder}
-            
             value={val}
             onChange={inputvalue}
             >

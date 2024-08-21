@@ -9,12 +9,16 @@ import { Icon } from '@vaadin/react-components/Icon.js';
 import MenuButtons from './MenuButtons';
 import Result from './Result';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from "react-i18next";
+import MenuDialog1 from './Dialog/MenuDialog1';
  
+
 
 const AppContainer = () => {
 
 
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
+  const { t } = useTranslation("app");
 
   return (
     <div>
@@ -36,13 +40,15 @@ const AppContainer = () => {
         <div className='md:flex h-full '> 
         <div className='sm:w-full md:w-[100%] grid gap-[10px] '>
         <div> 
-          <MenuButtons/>
+          <MenuButtons  />
+          <MenuDialog1 />
+        
         </div>
         <div className='line w-full h-[1px] bg-secondary-background-color '></div>
-        <InputItems inputProps={{label:'Age' ,tooltip:'Age' ,suffix:'years' }} />
-        <InputItems inputProps={{label:'Ejection Fraction' ,tooltip:'Ejection Fraction', placeholder:'' ,suffix:'%'}} />
-        <InputItems inputProps={{label:'sBP' ,tooltip:'sBP', placeholder:'Normal: 100 - 200' ,suffix:'mm Hg'}} />    
-        <InputItems inputProps={{label:'BMI' ,tooltip:'BMI', placeholder:'Normal: 100 - 200' ,suffix:'kg/m²'}} />
+        <InputItems inputProps={{label:t('forms.age.label'),suffix:t('forms.age.suffix') }} />
+        <InputItems inputProps={{label:t('forms.ejection_fraction.label') ,placeholder:'' ,suffix:'%'}} />
+        <InputItems inputProps={{label:t('forms.sbp.label') ,placeholder:t('forms.sbp.placeholder') ,suffix:t('forms.sbp.suffix') }} />    
+        <InputItems inputProps={{label:t('forms.bmi.label'),placeholder:t('forms.bmi.placeholder') ,suffix:t('forms.bmi.suffix')}} />
         <InputChangeContainer />
         <NyhaClassSelector/>
         </div>
@@ -54,13 +60,62 @@ const AppContainer = () => {
         <div className='w-full  bg- -500  '>
         <div className='mx-[10px]  md:mt-[20px] md:mx-0 '>  
         <div className='grid grid-cols-1 gap-[20px]  '>
-        <HealthCriteriaButton title={'Gender '} selected={{label:'Female'}} val={[{label:'Female'},{label:'Male'}]}/> 
-        <HealthCriteriaButton title={'Current Smoker '} selected={{label:'No'}} val={[{label:'No'},{label:'yes'}]}/> 
-        <HealthCriteriaButton title={'Diabetes '} selected={{label:'No'}} val={[{label:'No'},{label:'yes'}]}/> 
-        <HealthCriteriaButton title={'COPD '} selected={{label:'No'}} val={[{label:'No'},{label:'yes'}]}/> 
-        <HealthCriteriaButton title={'Heart failure first diagnosed ≥18 months ago'} selected={{label:'No'}} val={[{label:'No'},{label:'yes'}]}/> 
-        <HealthCriteriaButton title={'Beta Blocker '} selected={{label:'No'}} val={[{label:'No'},{label:'yes'}]}/> 
-        <HealthCriteriaButton title={'ACEi/ARB '} selected={{label:'No'}} val={[{label:'No'},{label:'yes'}]}/> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.gender.title')} 
+          selectedId="female"
+          items={[
+            { id: 'female', value: t('criteria_buttons.gender.female') },
+            { id: 'male', value: t('criteria_buttons.gender.male') }
+          ]}
+        /> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.smoker.title')} 
+          selectedId="1"
+          items={[
+            { id: '1', value: t('criteria_buttons.smoker.no') },
+            { id: '2', value: t('criteria_buttons.smoker.yes') }
+          ]}
+        /> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.diabetes.title')} 
+          selectedId="1"
+          items={[
+            { id: '1', value: t('criteria_buttons.diabetes.no') },
+            { id: '2', value: t('criteria_buttons.diabetes.yes') }
+          ]}
+        /> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.copd.title')} 
+          selectedId="1"
+          items={[
+            { id: '1', value: t('criteria_buttons.copd.no')},
+            { id: '2', value:t('criteria_buttons.copd.yes') }
+          ]}
+        /> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.diagnosed.title')} 
+          selectedId="1"
+          items={[
+            { id: '1',  value:t('criteria_buttons.diagnosed.no') },
+            { id: '2', value:t('criteria_buttons.diagnosed.yes') }
+          ]}
+        /> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.blocker.title')} 
+          selectedId="1"
+          items={[
+            { id: '1', value: t('criteria_buttons.blocker.no') },
+            { id: '2', value: t('criteria_buttons.blocker.yes') }
+          ]}
+        /> 
+        <HealthCriteriaButton 
+          title={t('criteria_buttons.acei.title')} 
+          selectedId="1"
+          items={[
+            { id: '1', value: t('criteria_buttons.acei.no')},
+            { id: '2', value: t('criteria_buttons.acei.yes')}
+          ]}
+        /> 
         </div> 
         <div className='line w-full h-[1px] bg-secondary-background-color my-[20px]'></div>
 
